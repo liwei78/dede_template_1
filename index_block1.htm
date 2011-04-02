@@ -1,0 +1,43 @@
+<script type="text/javascript">
+  //<![CDATA[
+  (function($){
+    $(document).ready(function(){
+      $('.tab').mouseover(function(){
+        $('.tab').removeClass('on');
+        $(this).addClass('on');
+        hideallboard();
+        var target_div = $(this).attr('id') + '_div';
+        $('#'+target_div).show();
+      });
+      function hideallboard() {
+        $('.intro').hide();
+      }
+    });
+  })(jQuery);
+  //]]>
+
+</script>
+<div class="bignews">
+  <div class="title">
+    <strong>
+      <a href="#" id="news_btn1" class="tab on">本级工作动态</a>
+      <a href="#" id="news_btn2" class="tab">省残联工作动态</a>
+      <a href="#" id="news_btn3" class="tab">中残联工作动态</a>
+    </strong>
+  </div>
+  <ul class="c3 ico1 intro" id="news_btn1_div">
+    {dede:arclist row='5' titlelen='100' orderby='pubdate' typeid='49'}
+    <li><a href="[field:arcurl/]">[field:title/]</a></li>
+    {/dede:arclist}
+  </ul>
+  <ul class="c3 ico1 intro" id="news_btn2_div" style="display: none;">
+    {dede:arclist row='5' titlelen='100' orderby='pubdate' typeid='50'}
+    <li><a href="[field:arcurl/]">[field:title/]</a></li>
+    {/dede:arclist}
+  </ul>
+  <ul class="c3 ico1 intro" id="news_btn3_div" style="display: none;">
+    {dede:arclist row='5' titlelen='100' orderby='pubdate' typeid='51'}
+    <li><a href="[field:arcurl/]">[field:title/]</a></li>
+    {/dede:arclist}
+  </ul>
+</div>

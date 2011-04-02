@@ -1,0 +1,26 @@
+<div class="common_box">
+  <div class="latestnews">
+    <dl class="tbox light noborder">
+      <dt class="light"><strong>政务公开</strong></dt>
+      <dd class="light">
+        <ul class="d2 ico2">
+          {dede:arclist row='8' titlelen='80' orderby='pubdate' typeid='35'}
+          <li><span>[field:pubdate function="MyDate('m-d',@me)"/]</span><a href="[field:arcurl/]">[field:title/]</a></li>
+          {/dede:arclist}
+        </ul>
+      </dd>
+    </dl>
+  </div>
+  <div class="latestnews">
+    <dl class="tbox light noborder">
+      <dt class="light"><strong>基层动态</strong></dt>
+      <dd class="light">
+        <ul class="d2 ico2">
+          {dede:arclist row='8' titlelen='80' orderby='pubdate' typeid='40'}
+          <li><span>[field:pubdate function="MyDate('m-d',@me)"/]</span><a href="[field:arcurl/]">[field:title/]</a></li>
+          {/dede:arclist}
+        </ul>
+      </dd>
+    </dl>
+  </div>
+</div>

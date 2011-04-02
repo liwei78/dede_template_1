@@ -1,0 +1,49 @@
+<div class="commend">
+  <dl class="tbox page_sider">
+    <dt><strong>公告通知</strong></dt>
+    <dd>
+      <ul class="c1 ico2 gonggao">
+        <marquee direction="up" onmouseover="this.stop()" onmouseout="this.start()" scrollAmount=2 scrollDelay=50>
+          {dede:myad name='gonggao'/}
+        </marquee>
+      </ul>
+    </dd>
+  </dl>
+</div>
+<div class="commend">
+  <dl class="tbox page_sider">
+    <dt><strong>人物风采</strong></dt>
+    <dd>
+      <ul class="c1 ico2">
+        {dede:arclist titlelen=42 row='4' typeid='28'}
+        <li class='dotline'><a href="[field:arcurl/]">[field:title/]</a></li>
+        {/dede:arclist}
+      </ul>
+    </dd>
+  </dl>
+</div>
+<div class="commend">
+  <dl class="tbox page_sider">
+    <dt><strong>助残模范</strong></dt>
+    <dd>
+      <ul class="c1 ico2">
+        {dede:arclist titlelen=42 row='4' typeid='29'}
+        <li class='dotline'><a href="[field:arcurl/]">[field:title/]</a></li>
+        {/dede:arclist}
+      </ul>
+    </dd>
+  </dl>
+</div>
+<div class="vote mt1">
+  <dl class="tbox page_sider">
+    <dt><strong>图文资讯</strong></dt>
+    {dede:arclist row='5' type='image.' orderby=click}
+    <dd class="pic_news">
+      <a href="[field:arcurl/]" class="preview"><img src="[field:litpic/]" alt="[field:title function='html2text(@me)'/]"/></a>
+      <br>
+      <a href="[field:arcurl/]" class="title">[field:title/]</a>
+    </dd>
+    {/dede:arclist}
+  </dl>
+</div>
+

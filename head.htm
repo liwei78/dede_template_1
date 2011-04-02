@@ -1,0 +1,58 @@
+<div class="header">
+  <div class="left_dl"><img src="/images/dl.jpg" /></div>
+  <div class="right_dl"><img src="/images/dl.jpg" /></div>
+  <script language="javascript" type="text/javascript">
+    window.onload=function (){
+      setInterval("document.getElementById('time').innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);
+    }
+  </script>
+  <div class="header_top w990">
+    <span id="time" class="time"></span>
+    <div class="toplinks">
+      <a href=""onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('{dede:global.cfg_basehost/}');">设为首页</a> | <a href="javascript:window.external.AddFavorite('{dede:global.cfg_basehost/}','{dede:global.cfg_webname/}')">加入收藏</a>
+    </div>
+  </div>
+  <div class="top w990 center">
+    {dede:myad name='top-banner'/}
+  </div>
+  <!-- //菜单 -->
+  <div class="module blue mT10 wrapper w990">
+    <div class="top">
+      <div class="t_l"></div>
+      <div class="t_r"></div>
+      <div id="navMenu">
+        <ul>
+          <li><a href='{dede:global.cfg_cmsurl/}/'><span>主页</span></a></li>
+        	{dede:channel type='top' row='10' currentstyle="<li class='hover'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>"}
+            <li><a href='[field:typeurl/]' [field:rel/]><span>[field:typename/]</span></a></li>
+        	{/dede:channel}
+        </ul>
+      </div>
+      <div class="search">
+        <form  name="formsearch" action="{dede:field name='phpurl'/}/search.php">
+          <input type="hidden" name="domains" value="www.dedecms.com">
+          <div class="form">
+            <h4></h4>
+            资讯搜索
+            <input type="hidden" name="kwtype" value="0" />
+            <input name="q" type="text" class="search-keyword" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+            <select name="searchtype" class="search-option" id="search-option">
+              <option value="titlekeyword">站内搜索</option>
+            </select>
+            <button type="submit" class="search-submit">搜索</button>
+          </div>
+          <input type="hidden" name="client" value="pub-9280232748837488">
+          <input type="hidden" name="forid" value="1">
+          <input type="hidden" name="ie" value="UTF-8">
+          <input type="hidden" name="oe" value="UTF-8">
+          <input type="hidden" name="safe" value="active">
+          <input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1">
+          <input type="hidden" name="hl" value="zh-CN">
+        </form>
+        <div class="tags">
+          {dede:myad name='weather'/}
+        </div>
+      </div><!-- //search -->
+    </div>
+  </div>
+</div><!-- //header -->

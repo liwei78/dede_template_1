@@ -1,0 +1,91 @@
+<div class="common_box youqinglianjie">
+  <div class="title"><strong>友情连接</strong></div>
+  <div class="tabs">
+    <ul>
+      <li><a href="#" id="lj-btn1" class="lj">相关网站</a></li>
+      <li><a href="#" id="lj-btn2" class="lj">副省级城市残疾人联合会</a></li>
+      <li><a href="#" id="lj-btn3" class="lj">所属事业单位</a></li>
+      <li><a href="#" id="lj-btn4" class="lj">区县残联网站</a></li>
+      <div class="clearfix"></div>
+    </ul>
+  </div>
+  <div class="links">
+    <div id="lj-btn1-div" class="lj-div">
+      <ul class="short-title">
+        
+        <div class="clearfix"></div>
+      </ul>
+      <ul class="long-title">
+        <li>中国残疾人联合会</li>
+        <li>吉林省残疾人联合会</li>
+        <div class="clearfix"></div>
+      </ul>
+    </div>
+    <div id="lj-btn2-div" class="lj-div" style="display: none;">
+      <ul class="short-title">
+        <li><a href="http://www.sydpf.org.cn/ecdomain/framework/sycl_web/">沈阳市残疾人联合会</a></li>
+        <li><a href="http://www.hrbcl.gov.cn/">哈尔滨残疾人联合会</a></li>
+        <li><a href="http://www.cdcl.org/">成都市残疾人联合会</a></li>
+        <li><a href="http://www.qdpf.org.cn/">青岛市残疾人联合会</a></li>
+        <li><a href="http://www.whcl.net.cn/">武汉市残疾人联合会</a></li>
+        <li><a href="http://www.xa-dpf.org.cn/">西安市残疾人联合会</a></li>
+        <li><a href="http://www.njcl.gov.cn/">南京市残疾人联合会</a></li>
+        <li><a href="http://www.gzdpf.org.cn/">广州市残疾人联合会</a></li>
+        <li><a href="http://www.cjr.org.cn/">深圳市残疾人联合会</a></li>
+        <li><a href="http://www.jinandpf.org/">济南市残疾人联合会</a></li>
+        <li><a href="http://www.daliandpf.org.cn/index.shtml">大连市残疾人联合会</a></li>
+        <li><a href="http://www.hzcl.org.cn/">杭州市残疾人联合会</a></li>
+        <li><a href="http://www.nbcl.org.cn/">宁波市残疾人联合会</a></li>
+        <li><a href="http://xm.fjdpf.org.cn/preweb/shownews.aspx?xw_id=76201042384146801">厦门市残疾人联合会</a></li>
+        <div class="clearfix"></div>
+      </ul>
+      <ul class="long-title">
+        <div class="clearfix"></div>
+      </ul>
+    </div>
+    <div id="lj-btn3-div" class="lj-div" style="display: none;">
+      <ul class="short-title">
+        
+        <div class="clearfix"></div>
+      </ul>
+      <ul class="long-title">
+        <li><a href="http://www.jlcccl.org.cn/">长春市残疾人培训就业服务中心</a></li>
+        <li><a href="http://www.ccfljh.cn/">长春市残疾人福利基金会</a></li>
+        <div class="clearfix"></div>
+      </ul>
+    </div>
+    <div id="lj-btn4-div" class="lj-div" style="display: none;">
+      <ul class="short-title">
+        <li><a href="http://bm.ccng.gov.cn/zhengfu/canlian/index.asp">南关区残疾人联合会</a></li>
+        <li><a href="http://www.cckc.gov.cn/cckc/cccl/">宽城区残疾人联合会</a></li>
+        <li><a href="http://canlian.yushu.gov.cn/">榆树市残疾人联合会</a></li>
+        <li><a href="http://www.dehui.gov.cn/cjrlhh/zqzg/2010/05/05/0850074026.shtml">德惠市残疾人联合会</a></li>
+        <div class="clearfix"></div>
+      </ul>
+      <ul class="long-title">
+        
+        <div class="clearfix"></div>
+      </ul>
+    </div>
+
+  </div>
+</div>
+<script type="text/javascript">
+  //<![CDATA[
+  (function($){
+    $(document).ready(function(){
+      $('.lj').mouseover(function(){
+        $('.lj').removeClass('on');
+        $(this).addClass('on');
+        hideallboard();
+        var target_div = $(this).attr('id') + '-div';
+        $('#'+target_div).show();
+      });
+      function hideallboard() {
+        $('.lj-div').hide();
+      }
+    });
+  })(jQuery);
+  //]]>
+
+</script>
